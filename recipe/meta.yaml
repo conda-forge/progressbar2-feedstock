@@ -1,6 +1,6 @@
 {% set name = "progressbar2" %}
-{% set version = "3.37.0" %}
-{% set sha256 = "146e3f5ca5846933eab3e7f9d656773f3b002b92bedc8a300e9db26782c98752" %}
+{% set version = "3.38.0" %}
+{% set sha256 = "d209f8c13672724bbb7bbf76e7ffedaa0bcdac32dc8db68a627bbabfd6c75de0" %}
 
 package:
   name: {{ name|lower }}
