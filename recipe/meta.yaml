@@ -1,6 +1,6 @@
 {% set name = "progressbar2" %}
-{% set version = "3.46.1" %}
-{% set sha256 = "386312d76a3bf6cc1a88d09cab7bd22ba672d031667b1e71a3b591746bfe2349" %}
+{% set version = "3.47.0" %}
+{% set sha256 = "7538d02045a1fd3aa2b2834bfda463da8755bd3ff050edc6c5ddff3bc616215f" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
