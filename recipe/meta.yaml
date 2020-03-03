@@ -1,32 +1,29 @@
 {% set name = "progressbar2" %}
 {% set version = "3.50.0" %}
-{% set sha256 = "e5dcded3957b40eab6ba23962d25618a7709971b5413078a5905a93e84345e92" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: e5dcded3957b40eab6ba23962d25618a7709971b5413078a5905a93e84345e92
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 2
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python
     - setuptools
-    - pytest-runner >=2.8
-    - python-utils
   run:
     - python
-    - pytest-runner >=2.8
-    - python-utils
+    - python-utils >=2.3.0
+    - six
 
 test:
   imports:
@@ -72,3 +69,4 @@ extra:
   recipe-maintainers:
     - maartenbreddels
     - WoLpH
+    - marcelotrevisani
