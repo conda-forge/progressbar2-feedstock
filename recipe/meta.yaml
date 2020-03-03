@@ -1,6 +1,6 @@
 {% set name = "progressbar2" %}
-{% set version = "3.47.0" %}
-{% set sha256 = "7538d02045a1fd3aa2b2834bfda463da8755bd3ff050edc6c5ddff3bc616215f" %}
+{% set version = "3.50.0" %}
+{% set sha256 = "e5dcded3957b40eab6ba23962d25618a7709971b5413078a5905a93e84345e92" %}
 
 package:
   name: {{ name|lower }}
@@ -39,32 +39,32 @@ about:
   license_file: LICENSE
   summary: A Python Progressbar library to provide visual (yet text based) progress to long running operations.
   description: |
-        A text progress bar is typically used to display the progress of a long
-        running operation, providing a visual cue that processing is underway.
+    A text progress bar is typically used to display the progress of a long
+    running operation, providing a visual cue that processing is underway.
 
-        The ProgressBar class manages the current progress, and the format of the line
-        is given by a number of widgets. A widget is an object that may display
-        differently depending on the state of the progress bar. There are many types
-        of widgets:
+    The ProgressBar class manages the current progress, and the format of the line
+    is given by a number of widgets. A widget is an object that may display
+    differently depending on the state of the progress bar. There are many types
+    of widgets:
 
-         - `Timer`
-         - `ETA`
-         - `AdaptiveETA`
-         - `FileTransferSpeed`
-         - `AdaptiveTransferSpeed`
-         - `AnimatedMarker`
-         - `Counter`
-         - `Percentage`
-         - `FormatLabel`
-         - `SimpleProgress`
-         - `Bar`
-         - `ReverseBar`
-         - `BouncingBar`
-         - `RotatingMarker`
-         - `DynamicMessage`
+     - `Timer`
+     - `ETA`
+     - `AdaptiveETA`
+     - `FileTransferSpeed`
+     - `AdaptiveTransferSpeed`
+     - `AnimatedMarker`
+     - `Counter`
+     - `Percentage`
+     - `FormatLabel`
+     - `SimpleProgress`
+     - `Bar`
+     - `ReverseBar`
+     - `BouncingBar`
+     - `RotatingMarker`
+     - `DynamicMessage`
 
-        The progressbar module is very easy to use, yet very powerful. It will also
-        automatically enable features like auto-resizing when the system supports it.
+    The progressbar module is very easy to use, yet very powerful. It will also
+    automatically enable features like auto-resizing when the system supports it.
   doc_url: http://progressbar-2.readthedocs.org/en/latest/
   dev_url: https://github.com/WoLpH/python-progressbar
 
