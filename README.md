@@ -144,4 +144,5 @@ Feedstock Maintainers
 
 * [@WoLpH](https://github.com/WoLpH/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
+* [@marcelotrevisani](https://github.com/marcelotrevisani/)
 
