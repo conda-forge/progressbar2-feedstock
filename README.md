@@ -5,7 +5,7 @@ Home: https://github.com/WoLpH/python-progressbar
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python Progressbar library to provide visual (yet text based) progress to long running operations.
 
