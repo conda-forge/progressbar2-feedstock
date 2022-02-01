@@ -17,12 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python =2.7|>=3.4
     - setuptools
   run:
-    - python =2.7|>=3.4
-    - python-utils >=2.3.0
-    - six
+    - python >=3.7
+    - python-utils >=3.0.0
 
 test:
   imports:
