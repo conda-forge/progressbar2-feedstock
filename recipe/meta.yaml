@@ -1,6 +1,5 @@
 {% set name = "progressbar2" %}
-{% set version = "3.53.1" %}
-
+{% set version = "3.55.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,30 +7,30 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ef72be284e7f2b61ac0894b44165926f13f5d995b2bf3cd8a8dedc6224b255a7
+  sha256: 86835d1f1a9317ab41aeb1da5e4184975e2306586839d66daf63067c102f8f04
 
 build:
   noarch: python
-  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
     - pip
-    - python
+    - python =2.7|>=3.4
     - setuptools
   run:
-    - python
+    - python =2.7|>=3.4
     - python-utils >=2.3.0
     - six
 
 test:
   imports:
     - progressbar
-  requires:
-    - pip
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/WoLpH/python-progressbar
@@ -74,3 +73,4 @@ extra:
     - maartenbreddels
     - WoLpH
     - marcelotrevisani
+    - BastianZim
