@@ -1,5 +1,5 @@
 {% set name = "progressbar2" %}
-{% set version = "4.2.0" %}
+{% set version = "4.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1393922fcb64598944ad457569fbeb4b3ac189ef50b5adb9cef3284e87e394ce
+  sha256: c37e6e1b4e57ab43f95c3d0e8d90061bec140e4fed56b8343183db3aa1e19a52
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - python-utils >=3.0.0
+    - python-utils >=3.8.1
 
 test:
   imports:
